@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+h1 {
+  font-size: $fs-700;
+  font-weight: 300;
+}

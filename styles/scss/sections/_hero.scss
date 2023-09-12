@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.hero {
+  display: block;
+  text-align: center;
+  margin: 5rem auto;
+
+  &__heading {
+    color: $white;
+    width: 80%;
+    margin: auto;
+    padding: 5rem 0;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  }
+
+  &__logo {
+    width: 24.5rem;
+  }
+}

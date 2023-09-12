@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+.btn {
+  display: inline-block;
+  font-size: $fs-300;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  padding: 0.7rem 2rem;
+  border-radius: 0;
+
+  &--outline {
+    border: 1px solid $white;
+  }
+
+  &:active,
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+}
