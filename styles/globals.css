@@ -31,21 +31,45 @@ a:hover {
   color: #ffffff;
 }
 
+h1,
+p {
+  font-weight: 300;
+}
+
 h1 {
   font-size: 4rem;
-  font-weight: 300;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 400;
 }
 
 .btn {
   display: inline-block;
   font-size: 1.4rem;
+  background-color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  padding: 0.7rem 2rem;
+  padding: 0.9rem 2rem;
   border-radius: 0;
+  cursor: pointer;
 }
 .btn--outline {
+  color: #ffffff;
   border: 1px solid #ffffff;
+}
+.btn--outline-dark {
+  border: 1px solid #545554;
+  color: #545554;
+}
+.btn--outline-dark:hover {
+  color: #545554;
+}
+.btn--primary {
+  background-color: #1b3534;
+  color: #d9ead2;
+  padding: 0.9rem 4rem;
 }
 .btn:active, .btn:focus {
   outline: none !important;
@@ -66,6 +90,40 @@ h1 {
   padding: 5rem 0;
 }
 
+.discover {
+  position: relative;
+  background-color: #ebe6de;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 700px;
+  color: #1b3534;
+}
+.discover__wrapper {
+  display: flex;
+  justify-content: end;
+}
+.discover__content {
+  width: 40%;
+}
+.discover__content br {
+  content: "";
+  display: block;
+  margin-bottom: 1rem;
+}
+.discover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/leaf.png");
+  background-size: 680px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-position: 0 4rem;
+}
+
 .hero {
   display: block;
   text-align: center;
@@ -80,4 +138,39 @@ h1 {
 }
 .hero__logo {
   width: 24.5rem;
+}
+
+.register__select, .register__input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #1b3534;
+  padding: 1.5rem 1rem 1.5rem 0 !important;
+  margin: 1rem 0;
+  color: #1b3534;
+  font-size: 1.8rem;
+  background-color: transparent;
+}
+
+.register {
+  padding: 10rem 0;
+  background-color: #d9ead2;
+  text-align: center;
+}
+.register__heading, .register__content, .register__form {
+  margin-bottom: 2.5rem;
+}
+.register__content {
+  font-weight: 400;
+}
+.register__input::placeholder {
+  color: #1b3534;
+  font-size: 1.8rem;
+}
+.register__select {
+  appearance: none;
+  background-image: url("../../../assets/arrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7rem top 50%, 0 0;
+  background-size: 2rem auto, 100%;
 }

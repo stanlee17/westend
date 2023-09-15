@@ -9,7 +9,16 @@ a {
   }
 }
 
+h1,
+p {
+  font-weight: 300;
+}
+
 h1 {
   font-size: $fs-700;
-  font-weight: 300;
+}
+
+h2 {
+  font-size: $fs-600;
+  font-weight: 400;
 }

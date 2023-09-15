@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+.discover {
+  position: relative;
+  background-color: $pearlBush;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 700px;
+  color: $gableGreen;
+
+  &__wrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__content {
+    width: 40%;
+
+    & br {
+      content: '';
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/leaf.png');
+    background-size: 680px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-position: 0 4rem;
+  }
+}

@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+
+%inputForm {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $gableGreen;
+  padding: 1.5rem 1rem 1.5rem 0 !important;
+  margin: 1rem 0;
+  color: $gableGreen;
+  font-size: $fs-500;
+  background-color: transparent;
+}
+
+.register {
+  padding: 10rem 0;
+  background-color: $zanah;
+  text-align: center;
+
+  &__heading,
+  &__content,
+  &__form {
+    margin-bottom: 2.5rem;
+  }
+
+  &__content {
+    font-weight: 400;
+  }
+
+  &__input {
+    @extend %inputForm;
+
+    &::placeholder {
+      color: $gableGreen;
+      font-size: $fs-500;
+    }
+  }
+
+  &__select {
+    @extend %inputForm;
+    appearance: none;
+    background-image: url('../../../assets/arrow.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7rem top 50%, 0 0;
+    background-size: 2rem auto, 100%;
+  }
+}

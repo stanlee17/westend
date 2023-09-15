@@ -3,13 +3,31 @@
 .btn {
   display: inline-block;
   font-size: $fs-300;
+  background-color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  padding: 0.7rem 2rem;
+  padding: 0.9rem 2rem;
   border-radius: 0;
+  cursor: pointer;
 
   &--outline {
+    color: $white;
     border: 1px solid $white;
+
+    &-dark {
+      border: 1px solid $fuscousGray;
+      color: $fuscousGray;
+
+      &:hover {
+        color: $fuscousGray;
+      }
+    }
+  }
+
+  &--primary {
+    background-color: $gableGreen;
+    color: $zanah;
+    padding: 0.9rem 4rem;
   }
 
   &:active,
